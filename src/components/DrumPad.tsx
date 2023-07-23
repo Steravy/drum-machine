@@ -9,14 +9,9 @@ interface DrumPadProps {
 
 const DrumPad: React.FC<DrumPadProps> = ({ id, sound, setSoundLablel }: DrumPadProps) => {
 
-    const { keyCode, keyTrigger, src, description } = sound;
+    const { keyTrigger, src, description } = sound;
     const audioRef = useRef<HTMLAudioElement>(null);
 
-    const audioPlayer = (src: string) => {
-
-        new Audio(src)
-            .play();
-    }
 
     const handleClickToPlay = useCallback((e: MouseEvent<HTMLButtonElement>) => {
 
@@ -58,9 +53,10 @@ const DrumPad: React.FC<DrumPadProps> = ({ id, sound, setSoundLablel }: DrumPadP
     return (
 
         <button onClick={handleClickToPlay} id={id} className="drum-pad col-span-1 border border-white p-4 rounded-lg aspect-square shadow-lg text-zinc-800" >
-            {/* not really necessary at all for my use case, just put it here as fcc requiremnt, but maybe you could build yours using it */}
+
             <audio ref={audioRef} src={src} className="clip" id={keyTrigger} />
             {keyTrigger}
+
         </button>
     )
 }

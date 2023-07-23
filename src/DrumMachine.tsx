@@ -18,4 +18,4 @@ function DrumMachine() {
   )
 }
 
-export default DrumMachine
+export default DrumMachine;
