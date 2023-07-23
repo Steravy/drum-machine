@@ -1,16 +1,22 @@
 import { useState } from 'react';
 import './App.css';
 import DrumHolder from './components/DrumHolder';
+import Display from './components/Display';
 
 function DrumMachine() {
-  const [count, setCount] = useState(0)
+
+  const [soundLablel, setSoundLablel] = useState<string>("");
 
   return (
 
-    <section id="drum-machine" className='h-[100vh] p-4 flex flex-col justify-center items-center bg-slate-100' >
-        <DrumHolder />
+    <section id="drum-machine" className='h-[100vh] p-4 flex flex-col md:flex-row-reverse justify-center items-center gap-6 bg-slate-100 ' >
+
+      <Display label={soundLablel} />
+      <DrumHolder setSoundLablel={setSoundLablel} />
+
     </section>
   )
 }
 
 export default DrumMachine
+{/* <section className="flex flex-col md:flex-row justify-center items-center gap-6" > */ }
