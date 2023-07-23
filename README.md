@@ -7,7 +7,7 @@
   <img src="https://github.com/Steravy/drum-machine/blob/main/public/mobile.png" alt="Drum Machine" width="400px" height='auto' />
 </div>
 
-This is a web application built with React as part of the freeCodeCamp projects series to earn the Front End Development Libraries Certification. Note that the aim of this build is not to deliver a great app experience or but to get the test pass on FCC.
+This is a web application built with React as part of the freeCodeCamp projects series to earn the Front End Development Libraries Certification. Note that the aim of this build is not to deliver a great user experience or a great interface design but to get the test pass on FCC.
 Hope you like my implementation! Feel free to use as your own, replicate or whatever...
 
 ## Features
