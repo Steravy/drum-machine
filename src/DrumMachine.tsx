@@ -9,7 +9,7 @@ function DrumMachine() {
 
   return (
 
-    <section id="drum-machine" className='h-[100vh] p-4 flex flex-col md:flex-row-reverse justify-center items-center gap-6 bg-slate-100 ' >
+    <section id="drum-machine" className='h-[100vh] p-4 flex flex-col md:flex-row-reverse justify-center items-center gap-6 bg-slate-200 ' >
 
       <Display label={soundLablel} />
       <DrumHolder setSoundLablel={setSoundLablel} />
@@ -19,4 +19,3 @@ function DrumMachine() {
 }
 
 export default DrumMachine
-{/* <section className="flex flex-col md:flex-row justify-center items-center gap-6" > */ }

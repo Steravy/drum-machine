@@ -18,11 +18,9 @@ const DrumHolder: React.FC<DrumHolderProps> = ({ setSoundLablel }: DrumHolderPro
                 drumSounds.map((sound) => {
                     return (
                         <DrumPad
+                            sound={sound}
                             key={sound.keyTrigger}
                             id={sound.description}
-                            src={sound.src}
-                            keyTrigger={sound.keyTrigger}
-                            desription={sound.description}
                             setSoundLablel={setSoundLablel}
                         />
                     )
