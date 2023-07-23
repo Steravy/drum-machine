@@ -47,7 +47,7 @@ const DrumPad: React.FC<DrumPadProps> = ({ id, sound, setSoundLablel }: DrumPadP
             document.removeEventListener('keydown', handleKeyPress);
         };
 
-    }, [keyTrigger, src, setSoundLablel]);
+    }, [keyTrigger, setSoundLablel]);
 
 
     return (
